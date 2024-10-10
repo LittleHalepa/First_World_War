@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+  <title>First World War</title>
+</head>
+<body style="background-color: black">
+
+  <p class="score">0/17</p>
+
+  <div class="question-div-flex-box">
+
+    <div class="right-section"></div>
+    <section class="question-div">
+      <p class="question">Натисніть ПОЧАТИ</p>
+    </section>
+    <div class="right-section"></div>
+  </div>
+  
+
+  <div class="buttons-flex-box">
+    <button onclick="
+      div_main = document.querySelector('.question-div');
+      ScoreElement = document.querySelector('.score');
+      if (dates[localStorage.getItem('randomKey')] === 1914) {
+        
+        div_main.classList.add('div-correct');
+        ScoreNumber = ScoreNumber + 1;
+        ScoreElement.innerHTML = `${ScoreNumber}/17`;
+
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-correct');
+          delete dates[localStorage.getItem('randomKey')];
+          findRandomKey();
+          if (dates[localStorage.getItem('randomKey')] === undefined) {
+            PElement.innerHTML = 'Перемога! Ви можете натиснути СПОЧАТКУ.'
+          }else {
+            PElement.innerHTML = localStorage.getItem('randomKey');
+          }
+        });
+
+      }else {
+        PElement.innerHTML = 'Халепа! Правильно: ' + dates[localStorage.getItem('randomKey')];
+        localStorage.removeItem('randomKey');
+        div_main.classList.add('div-incorrect');
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-incorrect');
+        });
+      }
+    
+      " id="buttons">1914</button>
+    <button onclick="
+      div_main = document.querySelector('.question-div');
+      ScoreElement = document.querySelector('.score')
+      if (dates[localStorage.getItem('randomKey')] === 1915) {
+        
+        div_main.classList.add('div-correct');
+        ScoreNumber = ScoreNumber + 1;
+        ScoreElement.innerHTML = `${ScoreNumber}/17`;
+
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-correct');
+          delete dates[localStorage.getItem('randomKey')];
+          findRandomKey();
+          if (dates[localStorage.getItem('randomKey')] === undefined) {
+            PElement.innerHTML = 'Перемога! Ви можете натиснути СПОЧАТКУ.'
+          }else {
+            PElement.innerHTML = localStorage.getItem('randomKey');
+          }
+        });
+
+      }else {
+        PElement.innerHTML = 'Халепа! Правильно: ' + dates[localStorage.getItem('randomKey')];
+        localStorage.removeItem('randomKey');
+        div_main.classList.add('div-incorrect');
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-incorrect');
+        });
+      }
+    
+    
+    " id="buttons">1915</button>
+    <button onclick="
+    div_main = document.querySelector('.question-div');
+    ScoreElement = document.querySelector('.score')
+    if (dates[localStorage.getItem('randomKey')] === 1916) {
+        
+        div_main.classList.add('div-correct');
+        ScoreNumber = ScoreNumber + 1;
+        ScoreElement.innerHTML = `${ScoreNumber}/17`;
+
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-correct');
+          delete dates[localStorage.getItem('randomKey')];
+          findRandomKey();
+          if (dates[localStorage.getItem('randomKey')] === undefined) {
+            PElement.innerHTML = 'Перемога! Ви можете натиснути СПОЧАТКУ.'
+          }else {
+            PElement.innerHTML = localStorage.getItem('randomKey');
+          }
+        });
+
+      }else {
+        PElement.innerHTML = 'Халепа! Правильно: ' + dates[localStorage.getItem('randomKey')];
+        localStorage.removeItem('randomKey');
+        div_main.classList.add('div-incorrect');
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-incorrect');
+        });
+      }
+    " id="buttons">1916</button>
+    <button onclick="
+    div_main = document.querySelector('.question-div');
+    ScoreElement = document.querySelector('.score')
+    if (dates[localStorage.getItem('randomKey')] === 1917) {
+        
+        div_main.classList.add('div-correct');
+        ScoreNumber = ScoreNumber + 1;
+        ScoreElement.innerHTML = `${ScoreNumber}/17`;
+
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-correct');
+          delete dates[localStorage.getItem('randomKey')];
+          findRandomKey();
+          if (dates[localStorage.getItem('randomKey')] === undefined) {
+            PElement.innerHTML = 'Перемога! Ви можете натиснути СПОЧАТКУ.'
+          }else {
+            PElement.innerHTML = localStorage.getItem('randomKey');
+          }
+        });
+
+      }else {
+        PElement.innerHTML = 'Халепа! Правильно: ' + dates[localStorage.getItem('randomKey')];
+        localStorage.removeItem('randomKey');
+        div_main.classList.add('div-incorrect');
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-incorrect');
+        });
+      }
+    " id="buttons">1917</button>
+    <button onclick="
+    div_main = document.querySelector('.question-div');
+    ScoreElement = document.querySelector('.score')
+    if (dates[localStorage.getItem('randomKey')] === 1918) {
+        
+        div_main.classList.add('div-correct');
+        ScoreNumber = ScoreNumber + 1;
+        ScoreElement.innerHTML = `${ScoreNumber}/17`;
+
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-correct');
+          delete dates[localStorage.getItem('randomKey')];
+          findRandomKey();
+          if (dates[localStorage.getItem('randomKey')] === undefined) {
+            PElement.innerHTML = 'Перемога! Ви можете натиснути СПОЧАТКУ.'
+          }else {
+            PElement.innerHTML = localStorage.getItem('randomKey');
+          }
+        });
+
+      }else {
+        PElement.innerHTML = 'Халепа! Правильно: ' + dates[localStorage.getItem('randomKey')];
+        localStorage.removeItem('randomKey');
+        div_main.classList.add('div-incorrect');
+        waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-incorrect');
+        });
+      }
+    " id="buttons">1918</button>
+  </div>
+
+  
+  
+  <button onclick="
+  const ButtonElement = document.querySelector('.start-button');
+
+
+  if (ButtonElement.innerHTML === 'Почати') {
+    ButtonElement.innerHTML = 'Спочатку';
+    ButtonElement.classList.add('restart-button');
+
+    PElement = document.querySelector('.question');
+    
+
+    findRandomKey();
+    
+
+    PElement.innerHTML = localStorage.getItem('randomKey');
+  }else if (ButtonElement.innerHTML === 'Спочатку'){
+
+    PElement = document.querySelector('.question');
+    ScoreNumber = 0;
+    ScoreElement.innerHTML = '0/17';
+    div_main.classList.add('div-restart');
+    waitUsingSetTimeout(1500, () => {
+          div_main.classList.remove('div-restart');
+        });
+    
+
+    let newdates = {
+      'Галицька битва': 1914,
+      'Битва під Таненбергом (Самсонська катастрофа)': 1914,
+      'Перша битва на річнці Марні': 1914,
+      'Перша хімічна атака в історії': 1915,
+      'Перше застосування підводного човна': 1914,
+      'Вихід Італії з Троїстого союзу': 1915,
+      'Горлицький Прорив': 1915,
+      'Верденська м\'ясорубка': 1916,
+      'Брусилівський Прорив': 1916,
+      'Єдина велика Морська битва(я хз як називається)': 1916,
+      'Атака на Лузитанію': 1915,
+      'Друга битва на річці Марні': 1918,
+      'Контр-наступ військ Антанти': 1918,
+      'Чорний день німецької армії': 1918,
+      'Комп\'єнське перемир\'я': 1918,
+      '14 пунктів Вудро Вільсона': 1918,
+      'Вступ США в війну': 1917
+    };
+    dates = newdates; 
+
+    findRandomKey();
+    PElement.innerHTML = localStorage.getItem('randomKey');
+  }
+  
+  " class="start-button">Почати</button>
+  
+  <script src="index.js"></script>
+
+</body>
+
+</html>
